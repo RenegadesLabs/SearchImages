@@ -25,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
         numberPicker.setMaxValue(5);
         numberPicker.setMinValue(1);
         numberPicker.setWrapSelectorWheel(false);
-
-        if (savedInstanceState != null) {
-            editText.setText(savedInstanceState.getString("searchTerm"));
-            numberPicker.setValue(savedInstanceState.getInt("numColumns"));
-        }
     }
 
     @Override
